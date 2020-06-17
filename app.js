@@ -15,13 +15,13 @@ app.set('views','./views');
 app.set('view engine','hbs');
 
 var indexController = require('./index.js');
-app.use('https://testagnodejs.herokuapp.com/index/',indexController);
+app.use('/',indexController);
 
 var productController = require('./product.js');
-app.use('https://testagnodejs.herokuapp.com//product',productController);
+app.use('/product',productController);
 
 var customerController = require('./customer.js');
-app.use('/https://testagnodejs.herokuapp.com/customer',customerController);
+app.use('/customer',customerController);
 
 
 var server=app.listen(port,function() {});
