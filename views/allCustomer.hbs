@@ -12,11 +12,13 @@
         <tr>
             <td>Name</td>
             <td>Address</td>
+            <td>function</td>
         </tr>
         {{#each customers}}
             <tr>
+                <td>{{name}}</td>
+                <td>{{address}}</td>
                 <td><a href="/customer/delete?id={{_id}}">Delete</a></Td>
-                <td>{{name}} and {{address}}</td>
             </tr>
         {{/each}}
     </table>
