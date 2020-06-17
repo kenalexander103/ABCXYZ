@@ -24,4 +24,4 @@ var customerController = require('./customer.js');
 app.use('/customer',customerController);
 
 
-var server=app.listen(5000,function() {});
+var server=app.listen(port,function() {});
