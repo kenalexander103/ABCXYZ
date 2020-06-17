@@ -15,7 +15,7 @@ app.set('views','./views');
 app.set('view engine','hbs');
 
 var indexController = require('./index.js');
-app.use('/index',indexController);
+app.use('/',indexController);
 
 var productController = require('./product.js');
 app.use('/product',productController);
