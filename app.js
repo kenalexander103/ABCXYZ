@@ -2,6 +2,7 @@ const express = require('express');
 const engines = require('consolidate');
 const app = express();
 
+var port = process.env.PORT || 5000;
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -23,4 +24,4 @@ var customerController = require('./customer.js');
 app.use('/customer',customerController);
 
 
-var server=app.listen(3000,function() {});
+var server=app.listen(5000,function() {});
