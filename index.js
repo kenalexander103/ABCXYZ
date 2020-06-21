@@ -9,7 +9,7 @@ router.get('/',(req,res)=>{
 router.get('/about',(req,res)=>{
     //pasing model to view
     res.render('about',{ 
-            name: "Bill Gates",
+            name: "Minh Duc",
             job : "CEO"});
 })
 
