@@ -1,14 +1,225 @@
-body {
-    background-color: lightblue;
-    background-image: url(giphy.gif);
-  }
-  
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
+*
+{
+	margin: 0php;
+	padding: 0;
+}
+body
+{
+	background-color: #FFFFFF;
+    	font-family: sans-serif;
+	background-color:#FFFFFF;
+}
+
+.top-nav-bar
+{
+	height: 150px;
+	top : 0;
+	position: sticky;
+	background: rgb(58, 51, 51);
+	margin-bottom: -19px;
+	border-bottom: 4px solid #84ED8E;
+	z-index: 3;	
+
+}
+.logo
+{
+	height:120px;
+	margin:7px 20px;
+	width: 8%;
+	float: left;
+}
+.a1
+{
+	width:30%;
+	height: 12px;
+	float:left;
+
+}
+
+.a1 ul
+{
+	display: inline-flex;
+	float: left;
+}
+.a1 ul li
+{
+	display: inline-block;
+	border-left: 1px solid #787171;
+	list-style-type: 40px 40px;
+	text-align:center;
+	cursor:pointer;
+	list-style: none;
+	padding: 20px 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-size: 30px;
+
+
+
+
+}
+.ul123 a:hover{
+	color: blue;
+	background-color: yellow;
+	padding: 20px 30px;
+
+}
+
+
+.a1 a{
+	color: #9B6E6E;
+}
+
+.a1 li a{text-decoration:none;
+	font-size: 25px;
+	font-weight: bold;
+	color:none;
+	text-decoration: none;
+	top: 40%;
+}
+.sub-menu {
+	background-color: #424242;
+	width: 100px;
+	text-align:center;
+	display: none;
+	position: absolute;
+}
+.sub-menu li {
+	display: none;
+	margin-left:-50px;
+	border:none;
+}
+
+#menu li:hover .sub-menu {
+	display: block;
+}
+.bodysection{
+	background: black;
+	width: 100%;
+	height: 500px;
+	position: relative;
+
+}
+.title-h1{
+	font-size: 50px;
+	color:#000;
+	background-color: white;
+	padding: 10px;
+	margin: 140px 1170px;
+	margin-left: 40px;
+}
+
+.title1{
+	background-color: white;
+	padding: 10px;
+	margin: 100px 20px;
+	margin-left: 40px;
+
+}
+.button{
+	position: absolute;
+	top:50%;
+	left:50px;	
+
+}
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color:#fff;
+	text-decoration: none;
+}
+
+.btn hover{
+	color: #000;
+	background-color: #fff;
+	padding: 20px 30px;
+
+}
+
+.ul1 a:hover{
+	color: blue;
+	background-color: yellow;
+	padding: 20px 30px;
+
+}
+
+.login1{
+	position: absolute;
+	top:50%;
+	left:50px;	
+
+}
+.l1{
+	border: 3px solid #fff;
+	padding: 5px 40px;
+	color:#fff;
+	text-decoration: none;
+}
+
+.l1 hover{
+	color: #000;
+	background-color: #fff;
+	padding: 20px 20px;
+
+}
+footer{
+	height: 200px;
+	width: 100%;
+	float: left;
+}
+footer .left{
+	height: 100%;
+	width: 25%;
+	margin: 20px;
+	padding: 5px;
+	float: left;
+	text-decoration: none;
+}
+footer .center{
+	height: 100%;
+	width: 25%;
+	margin:  20px;
+	padding: 5px;
+	float: left;
+	text-decoration: none;
+}
+footer .right{
+	height: 100%;
+	width: 25%;
+	margin: 20px;
+	padding: 5px;
+	float: left;
+	text-decoration: none;
+}
+
+.whiteword{
+	color: white;
+}
+.product{
+	background-color: white;
+	overflow: visible;
+	width: 24%;
+	height: 24%;
+	margin: 0.5%;
+	float: left;
+}
+.middle{	
+	width: 80%;
+	float: left;
+	background-color: white;
+	overflow: visible;
+}
+.content{
+	overflow: visible;
+}
+.second{
+	height: 400px;
+	width: 10%;
+	float: left;
+	background-color: white;
+}
+.nitejogger{
+	color: white;
+	size:200px ;
+	
+}
