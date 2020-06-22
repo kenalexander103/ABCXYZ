@@ -32,9 +32,9 @@ router.get('/delete',async (req,res)=>{
 router.post('/doInsert',async (req,res)=>{
     let client= await MongoClient.connect(url);
     let dbo = client.db("MyDb");
-    let GameValue = req.body.txtGame;
-    let PriceValue = req.body.quantity;
-    let newCustomer = {Game : GameValue, Price:PriceValue};
+    let NameValue = req.body.txtName;
+    let AddressValue = req.body.txtAddress;
+    let newCustomer = {Name : NameValue, Address:AddressValue,};
     await dbo.collection("customers").insertOne(newCustomer);
    
     let results = await dbo.collection("customers").find({}).toArray();

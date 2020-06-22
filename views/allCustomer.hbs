@@ -46,14 +46,14 @@
     <br>
     <table border="1">
         <tr>
-            <td>Game</td>
-            <td>Price</td>
+            <td>Customer Name</td>
             <td>Remove</td>
         </tr>
         {{#each customers}}
             <tr>
-                <td>{{Game}}</td>
-                <td>{{Price}}</td>
+                <td>{{Name}}</td>
+                <td>{{Address}}</td>
+
                 <td><a href="/customer/delete?id={{_id}}">Delete</a></Td>
             </tr>
         {{/each}}
