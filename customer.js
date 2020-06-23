@@ -34,8 +34,9 @@ router.post('/doInsert',async (req,res)=>{
     let dbo = client.db("MyDb");
     let NameValue = req.body.txtName;
     let AddressValue = req.body.txtAddress;
-    let newCustomer = {Name : NameValue, Address:AddressValue,};
+    let newCustomer = {Name : NameValue, Address:AddressValue};
     await dbo.collection("customers").insertOne(newCustomer);
+    
    
     let results = await dbo.collection("customers").find({}).toArray();
     res.render('allCustomer',{customers:results});

@@ -47,13 +47,13 @@
     <table border="1">
         <tr>
             <td>Customer Name</td>
+            <td>Address</td>
             <td>Remove</td>
         </tr>
         {{#each customers}}
             <tr>
                 <td>{{Name}}</td>
                 <td>{{Address}}</td>
-
                 <td><a href="/customer/delete?id={{_id}}">Delete</a></Td>
             </tr>
         {{/each}}
